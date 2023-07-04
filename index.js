@@ -45,7 +45,7 @@ app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 
-app.use("*",(req,res)=>{
+app.use("/",(req,res)=>{
   res.sendFile(path.join(__dirname, "./client/build/index.html"))
 })
 
