@@ -17,7 +17,7 @@ app.use("/images", express.static(path.join(__dirname, "/images")));
 app.use(express.static(path.join(__dirname, "../client/build/index.html")));
 
 mongoose
-  .connect("mongodb://0.0.0.0:27017/blogging", {
+  .connect("mongodb://0.0.0.0:27017/bloggingDB", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
